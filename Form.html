@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<main class="content">
+
+	<header class="content__heading">
+		<h1>Web Design Guidelines</h1>
+	</header>
+
+	<aside class="content__link">
+		<ul>
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="TheLivingStyleguide.html">The Living Style Guide</a></li>
+			<li><a href="ColourPalette.html">Colour Palette</a></li>
+			<li><a href="CommonStyles.html">Common Styles</a></li>
+			<li><a href="Components.html">Components</a></li>
+      <li><a href ="Form.html">Form</a></li>
+			<li><a href="Reference.html">Reference</a></li>
+		</ul>
+	</aside>
+<article class="content__material">
+
+  <article class="content__form">
+		<div id="page">
+    <section id="Form">
+			<h1>Form</h1>
+
+			<form name="Form">
+				<label for="firstname">Firstname:</label>
+				<input id="firstname" name="firstname" type="text" title="Please enter your firstname" placeholder="Balram Singh" autofocus="" required="">
+
+				<label for="surname">Surname:</label>
+				<input id="surname" name="surname" type="text" title="Please enter your surname" placeholder="." required="">
+
+				<label for="email">Email:</label>
+				<input id="email" name="email" type="email" title="Please enter your email address" placeholder="S265297@student.cdu.edu.au" required="">
+
+				<label for="website">Website:</label>
+				<input id="website" name="website" type="url" title="Please enter the url to your website (optional)" placeholder="http://cdu.edu.au">
+
+				<label for="password">Password:</label>
+				<input id="password" name="password" type="password" title="Please enter a password, it must contain at least 1 lowercase and 1 uppercase character and be at least 6 characters in length" pattern="^.*(?=.{6,})(?=.*[a-z])(?=.*[A-Z]).*$" placeholder="******" required="">
+				<section>
+					<label for="checked">Do you like this form:</label>
+					<input id="checkbox" name="like this form" type="checkbox" checked="checked">
+			    		<label>
+				      Radio1:
+				      <input type="radio" name="radio1" value="radio1" checked />
+				      </label>
+				      <label>
+				      Radio2:
+				      <input type="radio" name="radio2" value="radio2" />
+				      </label>
+				      <label>
+				      Radio3:
+				      <input type="radio" name="radio3" value="radio3" />
+				      </label>
+				</section>
+
+
+
+			<section>
+				<label for="checkbox">Rating</label>
+				<select id="options" name="options">
+					<option value="Expert">Expert</option>
+					<option value="Good">Good</option>
+					<option value="Medium">Medium</option>
+					<option value="Poor">Poor</option>
+				</select>
+			</section>
+
+				<input type="submit" value="Submit">
+
+			</form>
+		</section>
+    </div>
+<script type="text/javascript" src="js/vendor/jquery-3.2.0.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
